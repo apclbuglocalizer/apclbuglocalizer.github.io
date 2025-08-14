@@ -17,8 +17,7 @@ title: Just the Docs
 description: A Jekyll theme for documentation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://apclbuglocalizer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-repository: apclbuglocalizer/bugfinderdoc # for github-metadata
-remote_theme: just-the-docs/just-the-docs
+repository: apclbuglocalizer/apclbuglocalizer # for github-metadata
 
 permalink: pretty
 
