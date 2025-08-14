@@ -1,5 +1,6 @@
 ---
 title: Markdown kitchen sink
+nav_enabled: false 
 nav_order: 99
 ---
 
