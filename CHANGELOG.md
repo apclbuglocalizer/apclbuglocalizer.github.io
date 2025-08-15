@@ -95,10 +95,6 @@ To use and pin a previous version of the theme, replace the `0.10.0` with the de
 - Added: sitemap (via `jekyll-sitemap` plugin) by [@mattxwang] in [#1530]
 - Fixed: (non-systemic) accessibility issues flagged by aXe by [@mattxwang] in [#1531]
 
-[#1431]: https://github.com/just-the-docs/just-the-docs/pull/1431
-[#1440]: https://github.com/just-the-docs/just-the-docs/pull/1440
-[#1530]: https://github.com/just-the-docs/just-the-docs/pull/1530
-[#1530]: https://github.com/just-the-docs/just-the-docs/pull/1531
 
 ## Release v0.9.0
 
@@ -675,9 +671,6 @@ We're so excited to release Just the Docs `v0.4.0`. This release has been almost
 `v0.4.0` contains many new features and bugfixes. We enumerate all of them in further sections in this changelog; however, we'd like to call out some of the most-requested changes:
 
 - better support for dark theme: dark highlighting, search input color
-- [callouts](https://just-the-docs.com/docs/ui-components/callouts/), a new design component to highlight content
-- [configuring mermaid.js](https://just-the-docs.com/docs/ui-components/code/#mermaid-diagram-code-blocks), a markdown-native diagram visualization library
-- [copy code button](https://just-the-docs.com/docs/ui-components/code/#copy-button) for code snippets
 - external navigation links
 - major improvements to nav generation efficiency and robustness
 - minor improvements to built-in accessibility (SVG icons, nav titles, skip to main content)
