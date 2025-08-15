@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "APCL Bug Localizer"
+  spec.name          = "APCL-Bug-Localizer"
   spec.version       = "0.10.1"
   spec.authors       = ["Patrick Marsceill", "Matthew Wang"]
   spec.email         = ["patrick.marsceill@gmail.com", "matt@matthewwang.me"]
