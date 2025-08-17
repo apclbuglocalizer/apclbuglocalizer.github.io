@@ -9,7 +9,8 @@ permalink: /
 # Welcome to APCL bug localizer
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+A bug localizer for memory bugs in C/C++
+
 {: .fs-6 .fw-300 }
 
 [Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
@@ -17,45 +18,45 @@ Just the Docs gives your documentation a jumpstart with a responsive Jekyll them
 
 ---
 
-{: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
+<!-- {: .warning }
+> This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes. -->
 
-This bug localizer is developed by 
+This bug localizer is developed by [apcl-research](https://github.com/apcl-research) at [University of Notre Dame](https://cse.nd.edu/). It is specifically developed to localize memory bugs in C/C++. This bug localizer is built based on the o4-mini model although you can change it to different models with cheaper/better options. You can refer to [Open AI](https://platform.openai.com/docs/models) for more information.
 
-## Getting started
+The author of this bug localizer is [Chia-Yi Su](https://chiayisu.github.io/) and [Collin McMillan](https://sdf.org/~cmc/). We are commited to keep this bug localizer open source. If you cannot find anything or have any question, please contact us. 
 
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
+The video demonstration for [ICSE 2026](https://conf.researchr.org/track/icse-2026/icse-2026-demonstrations) is as follows.
 
-{: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+## Key features
 
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
+- **Human-like bug localizer**: This bug localizer is designed based on the human study from [Human Attention During Localization of Memory Bugs in C Programs](https://arxiv.org/abs/2506.00693).
+- **Easy to submit bug report**: You can submit the bug report via website after deployment.
+- **Get notified right way**: You will receive Email notification after it is done.  
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+## Citation
+```bibtex
+@article{Su2025xxx,
+  title     = {xxx},
+  author    = {Chia-Yi Su and Collin McMillan},
+  journal   = {xxx},
+  volume    = {xxx},
+  pages     = {xxx},
+  year      = {2025}
+}
+```
 
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
-
-Other than that, you're free to customize sites that you create with the template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-{: .note }
-See the theme [README][Just the Docs README] for how to use the theme as a gem without creating a new site.
 
 ## About the project
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](https://patrickmarsceill.com).
+Just the Docs is &copy; 2025-{{ "now" | date: "%Y" }}.
 
-### License
-
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
 
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+email, or any other method with the owners of this repository before making a change.
 
+<!--
 #### Thank you to the contributors of Just the Docs!
 
 <ul class="list-style-none">
@@ -65,18 +66,7 @@ email, or any other method with the owners of this repository before making a ch
   </li>
 {% endfor %}
 </ul>
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
-
-----
-
-[^1]: The [source file for this page] uses all three markup languages.
-
-[^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+-->
 
 [Jekyll]: https://jekyllrb.com
 [Markdown]: https://daringfireball.net/projects/markdown/
@@ -91,5 +81,4 @@ Just the Docs is committed to fostering a welcoming community.
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[customize]: {% link docs/customization.md %}
 [use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
