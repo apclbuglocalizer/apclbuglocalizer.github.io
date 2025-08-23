@@ -6,24 +6,27 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Welcome to APCL bug localizer
+# Welcome to MIND
 {: .fs-9 }
 
 A bug localizer for memory bugs in C/C++
 
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+<!--[Get started now](http://172.237.148.235/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }-->
+<a href="http://172.237.148.235/" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2" target="_blank" rel="noopener noreferrer">
+  Get started now
+</a>
+[View it on GitHub][MIND repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 <!-- {: .warning }
 > This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes. -->
 
-This bug localizer is developed by [apcl-research](https://github.com/apcl-research) at [University of Notre Dame](https://cse.nd.edu/). It is specifically developed to localize memory bugs in C/C++. This bug localizer is built based on the o4-mini model although you can change it to different models with cheaper/better options. You can refer to [Open AI](https://platform.openai.com/docs/models) for more information.
+MIND stands for Memory Bug Inspection based on Neural Deduction and is developed by [apcl-research](https://github.com/apcl-research) at [University of Notre Dame](https://cse.nd.edu/). It is specifically developed to localize memory bugs in C/C++. MIND is mainly built based on the o4-mini model although you can change it to different models with cheaper/better options. You can refer to [Open AI](https://platform.openai.com/docs/models) for more information.
 
-The author of this bug localizer is [Chia-Yi Su](https://chiayisu.github.io/) and [Collin McMillan](https://sdf.org/~cmc/). We are commited to keep this bug localizer open source. If you cannot find anything or have any question, please contact us. 
+The author of MIND is [Chia-Yi Su](https://chiayisu.github.io/) and [Collin McMillan](https://sdf.org/~cmc/). We are commited to keep MIND open source. If you cannot find anything or have any question, please contact us. 
 
 The video demonstration for [ICSE 2026](https://conf.researchr.org/track/icse-2026/icse-2026-demonstrations) is as follows.
 
@@ -76,7 +79,7 @@ email, or any other method with the owners of this repository before making a ch
 [source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
 [Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
 [Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
+[MIND repo]: https://github.com/apcl-research/M.I.N.D.
 [Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md

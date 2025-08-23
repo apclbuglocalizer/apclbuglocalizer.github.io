@@ -25,6 +25,11 @@ This web form is built based on Python Flask framework. If you are a developer a
 Users are required to submit a `.zip` file that includes all of the source code, so the system can do the static analysis for more accurate results.
 
 ---
+## How it works
+
+![flow chart](/assets/images/flow.png)
+
+---
 
 ## Interface
 ![Bug Localizer Logo](/assets/images/interface.png)
