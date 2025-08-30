@@ -1,5 +1,5 @@
 ---
-title: Developer Guide 
+title: Guide for command-line 
 nav_order: 2
 ---
 
@@ -15,10 +15,12 @@ nav_order: 2
 {:toc}
 
 ---
+## Pre-requisite
+Our command-line tool uses on [Docker](https://www.docker.com/) as a backend to install all the dependency. So, please be sure to install Docker before you run it.
 
 
-## Tools
-This bug localizer requires some tools for static analysis. Please be sure to download the following tools before you deploy it.
+## Tools for Static Analysis
+CMIND uses some tools for static analysis. You will not need to install these tools yourself as it has already configured in the docker file.
 
 - [**Joern**](https://docs.joern.io/): We use Joern for data flow analysis and methods extractions.
 
@@ -27,7 +29,7 @@ This bug localizer requires some tools for static analysis. Please be sure to do
 ## LLM Agents
 Due to the limit of the input size in LLMs, we cannot keep using one LLM for the entire task. To this end, we seperate our LLMs agents into three differnt categories:
 
-- **Mehtod and file exploration**: Explore the related file path and methods from bug report
+- **Information collector**: Collect the entry point and the related functions from the bug report
 - **Static analysis**: Decide whether to use static analysis or callgraph analysis 
 - **Bug reasoning**: Reason the localization of the bugs and summarize the bug reasoning
 
@@ -35,39 +37,38 @@ Due to the limit of the input size in LLMs, we cannot keep using one LLM for the
 
 ![work flow](/assets/images/workflow.png) 
 
-## Pre-requisite
-To set up your local environment, run the following command. We recommend the use of a virtual environment for running the experiments.
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Configurations
 
 Please create the JSON file with the following format to set up your configuration. Note that we do not upload this file for the security reason. For password, you will need to generate the APP password instead of the password for your email.
 
-```json
+``` json
 {
-  "doxyfile_dir":"your doxyfile directory",
-  "model_name": "o4-mini-2025-04-16",
-  "joern_dir": "Joern directory",
-  "openai_key": "file name of your OpenAI key",
-  "sender_email":"your email",
-  "sender_password":"Your password"
+    "doxyfile_dir": "Path of Doxyfile for generating callgraph",
+    "model_name": "GPT models tag",
+    "joern_dir": "Joern directory e.g. '/opt/joern/joern-cli/joern'. Note that it needs to be the directory in the docker container not local directory"
+    "_joern_dir": "Joern directory for tesing locally e.g. '/home/chiayi/bin/joern/joern-cli/joern' You will need to change it to joern_dir yourself when run it locally for debug",
+    "openai_key": "Path for your OpenAI key",
+    "project_dir": "Dirctory of your source code",
+    "report_file": "Directory for your bug report e.g. './bug_report.txt'",
+    "container_name": "The name of your docker container e.g. debugger_container"
 }
 ```
 
-We used ```o4-mini-2025-04-16``` for the experiments although you could try different cheaper/better models. Please refer to [OpenAI](https://platform.openai.com/docs/models) for more information.
+- We used ```o4-mini-2025-04-16``` and ```gpt-5-mini-2025-08-07``` for the experiments although you could try different cheaper/better models. Please refer to [OpenAI](https://platform.openai.com/docs/models) for more information.
 
 {: .warning }
 There are some string parsing might fail when you change to different models because different models could have output with different formats. Be sure to check this, when you use different models.
 
-## Quick Start
+## How to run the code
 To run the application, you can simply run the following command.
 
 ```bash
-python3 app.py
+python3 run.py --config-file=config.json
 ```
 
-After you start, you will be able to open the website on your browser in http://127.0.0.1:5000/
+```
+--config-file: Path of your config.json file
+```
 
+- You will see the results on your screen when it finished. It might take a while because tools for static analysis is slow.

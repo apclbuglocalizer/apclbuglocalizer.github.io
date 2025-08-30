@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: M.I.N.D.
-description: A documentation for C memory bug localizer
+title: CMIND
+description: A documentation for CMIND
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://apclbuglocalizer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 repository: apclbuglocalizer/apclbuglocalizer # for github-metadata
@@ -116,8 +116,8 @@ heading_anchors: true
 # Makes Aux links open in a new tab. Default is false
 # Top-right auxiliary links
 aux_links:
-  "M.I.N.D. GitHub":
-    - "https://github.com/apcl-research/M.I.N.D."
+  "CMIND GitHub":
+    - "https://github.com/apcl-research/CMIND"
 aux_links_new_tab: true
 
 # Enable or disable the side/mobile menu globally
@@ -130,8 +130,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: M.I.N.D. GitHub
-    url: https://github.com/apcl-research/M.I.N.D.
+  - title: CMIND GitHub
+    url: https://github.com/apcl-research/CMIND
 
 # Show navigation error report
 nav_error_report: true # default is false/nil.

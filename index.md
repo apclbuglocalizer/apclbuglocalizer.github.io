@@ -6,7 +6,7 @@ description: "Just the Docs is a responsive Jekyll theme with built-in search th
 permalink: /
 ---
 
-# Welcome to MIND
+# Welcome to CMIND
 {: .fs-9 }
 
 A bug localizer for memory bugs in C/C++
@@ -24,9 +24,9 @@ A bug localizer for memory bugs in C/C++
 <!-- {: .warning }
 > This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes. -->
 
-MIND stands for Memory Bug Inspection based on Neural Deduction and is developed by [apcl-research](https://github.com/apcl-research) at [University of Notre Dame](https://cse.nd.edu/). It is specifically developed to localize memory bugs in C/C++. MIND is mainly built based on the o4-mini model although you can change it to different models with cheaper/better options. You can refer to [Open AI](https://platform.openai.com/docs/models) for more information.
+CMIND stands for C Memory Bug Inspection based on Neural Deduction and is developed by [apcl-research](https://github.com/apcl-research) at [University of Notre Dame](https://cse.nd.edu/). It is specifically developed to localize memory bugs in C. CMIND is mainly tested on the ```o4-mini-2025-04-16``` and ```gpt-5-mini-2025-08-07``` models although you can change it to different models with cheaper/better options. You can refer to [Open AI](https://platform.openai.com/docs/models) for more information.
 
-The author of MIND is [Chia-Yi Su](https://chiayisu.github.io/) and [Collin McMillan](https://sdf.org/~cmc/). We are commited to keep MIND open source. If you cannot find anything or have any question, please contact us. 
+The author of CMIND is [Chia-Yi Su](https://chiayisu.github.io/) and [Collin McMillan](https://sdf.org/~cmc/). We are commited to keep CMIND open source. If you cannot find anything or have any question, please contact us. 
 
 The video demonstration for [ICSE 2026](https://conf.researchr.org/track/icse-2026/icse-2026-demonstrations) is as follows.
 
@@ -38,8 +38,8 @@ The video demonstration for [ICSE 2026](https://conf.researchr.org/track/icse-20
 
 ## Citation
 ```bibtex
-@article{Su2025xxx,
-  title     = {xxx},
+@article{Su2025CMIND,
+  title     = {CMind: An AI Agent for Localizing C Memory Bugs},
   author    = {Chia-Yi Su and Collin McMillan},
   journal   = {xxx},
   volume    = {xxx},

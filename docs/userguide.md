@@ -1,5 +1,5 @@
 ---
-title: User Guide
+title: Guide for website submission
 nav_order: 3
 ---
 
@@ -17,9 +17,9 @@ nav_order: 3
 ---
 
 ## Overview
-The way to submit the bug report and related projects for bug localization is via a web-based submission form. The system will send you the notification email when you successfully submit the bugs and notify you via the same email after your bug localization is done. 
+One way to run CMIND is to submit your source code and bug report to a web-based submission form to our [Website](http://172.237.148.235/). The system will send you an ID when you submit the bug report and source code. You will need this code to retrive/download the results. 
 
-This web form is built based on Python Flask framework. If you are a developer and wants to deploy this tool, please refer to [Developer guide]({% link docs/configuration.md %}) on how to deploy it. 
+If you want to run it locally, please refer to [Guide for command-line]({% link docs/configuration.md %}) on how to run it. 
 
 {: .note }
 Users are required to submit a `.zip` file that includes all of the source code, so the system can do the static analysis for more accurate results.
@@ -38,23 +38,15 @@ Users are required to submit a `.zip` file that includes all of the source code,
 
 
 ## Instructions
+### How to Submit Files
+- Gather all relevant files (source code, logs, configs).
+- Compress them into a single .zip archive.
+- Fill out the "Bug Report" field in the form.
+- Upload your .zip file and submit.
+- Keep your ID as you will need it to retrieve the report
 
-1. **Prepare your files**  
-   Include all source code in the projects, so the system can do the static analysis for more accurate results.  
-
-2. **Compress into a `.zip`**  
-   Place all files into a single folder and compress it into a `.zip` archive.  
-
-3. **Name your archive**  
-   Please do not include any white space in your file name.
-
-4. **Fill out the form**  
-- Please be sure the Email address is correct as the system uses the provided email for communication.
-- Please provide detailed bug report. 
-
-5. **Upload the file**  
-Only `.zip` files are accepted.  
-
-6. **Submit**  
-- Click **Submit Report** and wait for the confirmation message.  
-- After bug localization is done, you will receive another emial notification.
+### How to Retrieve a Report
+- Enter the Bug Report ID.
+- Click "Retrieve Report".
+- Download or review the report details.
+- Keep your ID safe for future reference.
