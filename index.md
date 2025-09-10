@@ -9,7 +9,7 @@ permalink: /
 # Welcome to CMIND
 {: .fs-9 }
 
-A bug localizer for memory bugs in C/C++
+A bug localizer for memory bugs in C
 
 {: .fs-6 .fw-300 }
 
@@ -32,13 +32,13 @@ The video demonstration for [ICSE 2026](https://conf.researchr.org/track/icse-20
 
 ## Key features
 
-- **Human-like bug localizer**: This bug localizer is designed based on the human study from [Human Attention During Localization of Memory Bugs in C Programs](https://arxiv.org/abs/2506.00693).
-- **Easy to submit bug report**: You can submit the bug report via website after deployment.
-- **Get notified right way**: You will receive Email notification after it is done.  
+- **Human-like bug localizer**: Cmind is designed based on the human study from [Human Attention During Localization of Memory Bugs in C Programs](https://arxiv.org/abs/2506.00693).
+- **Flexibility to submit bug report**: You can submit the bug report via our online website or deploy it in your local machines
+- **Easy to retrieve results**: Cmind will return an ID after you submit the bug report. You can use this ID to submit bug report and source code  
+- **Combined LLMs with guidance**: Cmind combines LLMs with guided decision making to avoid LLMs go off-track
 
 ## Citation
-```bibtex
-@article{Su2025CMIND,
+```bibte@article{su2025cmind,
   title     = {CMind: An AI Agent for Localizing C Memory Bugs},
   author    = {Chia-Yi Su and Collin McMillan},
   journal   = {xxx},
@@ -79,7 +79,7 @@ email, or any other method with the owners of this repository before making a ch
 [source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
 [Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
 [Just the Docs]: https://just-the-docs.com
-[MIND repo]: https://github.com/apcl-research/M.I.N.D.
+[MIND repo]: https://github.com/apcl-research/CMIND
 [Just the Docs README]: https://github.com/just-the-docs/just-the-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
