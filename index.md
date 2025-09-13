@@ -19,6 +19,8 @@ A bug localizer for memory bugs in C
 </a>
 [View it on GitHub][MIND repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
+
+
 ---
 
 <!-- {: .warning }
@@ -29,6 +31,12 @@ CMIND stands for C Memory Bug Inspection based on Neural Deduction and is develo
 The author of CMIND is [Chia-Yi Su](https://chiayisu.github.io/) and [Collin McMillan](https://sdf.org/~cmc/). We are commited to keep CMIND open source. If you cannot find anything or have any question, please contact us. 
 
 The video demonstration for [ICSE 2026](https://conf.researchr.org/track/icse-2026/icse-2026-demonstrations) is as follows.
+
+<iframe width="600" height="400"
+        src="https://www.youtube.com/embed/e3F4rUryOtg"
+        frameborder="0"
+        allowfullscreen>
+</iframe>
 
 ## Key features
 
