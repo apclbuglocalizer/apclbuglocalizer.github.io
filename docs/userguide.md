@@ -17,7 +17,7 @@ nav_order: 3
 ---
 
 ## Overview
-One way to run CMIND is to submit your source code and bug report to a web-based submission form to our [Website](http://172.237.148.235/). The system will send you an ID when you submit the bug report and source code. You will need this code to retrive/download the results. 
+One way to run CMind is to submit your source code and bug report to a web-based submission form to our [Website](http://172.237.148.235/). The system will send you an ID when you submit the bug report and source code. You will need this code to retrive/download the results. 
 
 If you want to run it locally, please refer to [Guide for command-line]({% link docs/configuration.md %}) on how to run it. 
 

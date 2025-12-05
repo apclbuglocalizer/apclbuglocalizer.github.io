@@ -23,7 +23,7 @@ We discuss two examples here. In addition, we provide all the bug reports and do
 
 
 ## Bug Reports
-The following table is the link to each bug report with PR if any. ✅ means Cmind successfully localizes the bugs. ❌ means Cmind fails to localize the bugs. The results and source code are in [Link](https://github.com/apcl-research/CMIND/tree/main/results).
+The following table is the link to each bug report with PR if any. ✅ means CMind successfully localizes the bugs. ❌ means CMind fails to localize the bugs. The results and source code are in [Link](https://github.com/apcl-research/CMIND/tree/main/results).
 
 
 | #  | Issue                                                                 | PR / Commit                                                                                             | gpt-o4 | gpt-5 | Results                                                                 |
@@ -56,7 +56,7 @@ We discuss two examples in our [Website](http://172.237.148.235/). One is with s
 ### Result4 with stack trace
 **Report ID:** `7a3ed78200857e0`
 
-In this example, we included the stack trace in the bug reports.  We found that Cmind is able to refer to the similar functions for bug localization. More specifically, the issue is that ``mod`` in ApplicationAudioCaptureToolbar::Init becomes NULL when it is in the linux system and there no safety check on whether ``mod`` is NULL. However, We found that Cmind can refer other similar functions such as ``DisplayCaptureToolbar`` to localize the bugs.
+In this example, we included the stack trace in the bug reports.  We found that CMind is able to refer to the similar functions for bug localization. More specifically, the issue is that ``mod`` in ApplicationAudioCaptureToolbar::Init becomes NULL when it is in the linux system and there no safety check on whether ``mod`` is NULL. However, We found that CMind can refer other similar functions such as ``DisplayCaptureToolbar`` to localize the bugs.
 
 ---
 ```
@@ -82,13 +82,13 @@ Here’s a concise summary of the bug chain based solely on the provided informa
 5. On Linux, obs_get_module("win-wasapi") always returns NULL, so ApplicationAudioCaptureToolbar::Init ends up passing a NULL `mod` into obs_module_get_locale_text, which in turn passes it into obs_module_get_locale_string and dereferences mod->get_string, causing the crash.
 
 Hypothesis
-ApplicationAudioCaptureToolbar::Init fails to guard against a NULL module before requesting localized text, leading to a NULL-pointer dereference inside obs_module_get_locale_string. Specifically, we found that Cmind cannot refer to similar functions for bug localization in this case. 
+ApplicationAudioCaptureToolbar::Init fails to guard against a NULL module before requesting localized text, leading to a NULL-pointer dereference inside obs_module_get_locale_string. Specifically, we found that CMind cannot refer to similar functions for bug localization in this case. 
 ```
 
 ### Result4 without stack trace
 **Report ID:** `755c0391819b8ce`
 
-In this example, we did not included the stack trace in the bug reports. We found that Cmind only provided a high-level hypothesis. 
+In this example, we did not included the stack trace in the bug reports. We found that CMind only provided a high-level hypothesis. 
 
 ---
 ```
