@@ -32,12 +32,7 @@ The authors of CMind are [Chia-Yi Su](https://chiayisu.github.io/) and [Collin M
 
 The video demonstration for [ICPC 2026](https://conf.researchr.org/track/icpc-2026/icpc-2026-tool-demonstration) is as follows.
 
-<iframe width="600" height="400"
-        src="https://www.youtube.com/watch?v=_vVd0LRvVHI"
-        frameborder="0"
-        allowfullscreen>
-</iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_vVd0LRvVHI?si=UMkA4iWjkDK--4jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## Key features
 
 - **Human-like bug localizer**: CMind is designed based on the human study from [Human Attention During Localization of Memory Bugs in C Programs](https://arxiv.org/abs/2506.00693).
