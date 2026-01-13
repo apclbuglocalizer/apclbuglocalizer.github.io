@@ -46,13 +46,14 @@ The video demonstration for [ICPC 2026](https://conf.researchr.org/track/icpc-20
 - **Combined LLMs with guidance**: CMind combines LLMs with guided decision making to avoid LLMs go off-track
 
 ## Citation
-```bibte@article{su2025cmind,
+This paper has been accepted by [ICPC Demonstration Track](https://conf.researchr.org/track/icpc-2026/icpc-2026-tool-demonstration). Please cite the following if you use this in your research
+
+```bibte
+@inproceedings{su2026cmind,
   title     = {CMind: An AI Agent for Localizing C Memory Bugs},
   author    = {Chia-Yi Su and Collin McMillan},
-  journal   = {xxx},
-  volume    = {xxx},
-  pages     = {xxx},
-  year      = {2025}
+  booktitle = {IEEE/ACM International Conference on Software Engineering Tool Demo (ICPC Tool Demo)},
+  year      = {2026}
 }
 ```
 
